@@ -1,0 +1,7 @@
+1474454133570	Rename type 'StudentGradeFacade'
+1474454171795	Rename type 'StudentGradeFacadeImpl'
+1474472565621	Rename resource 'sgt'
+1474472848018	Rename resource 'sgt'
+1474475831842	Rename method 'addAssignmentPercentage'
+1474475840566	Rename method 'addExamPercentage'
+1474475849354	Rename method 'addExtraCreditPercentage'

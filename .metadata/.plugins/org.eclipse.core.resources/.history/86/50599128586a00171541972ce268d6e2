@@ -1,0 +1,10 @@
+package main.java.tree;
+
+public class VerticalSum {
+
+	
+	
+	public static void verticalOrderTraversal(TreeNode<Integer> root,int lineNo){
+		
+	}
+}

@@ -1,0 +1,11 @@
+package main.java.matrix;
+
+/**
+ * if mat[i][j] contains 1 then mark ith row 1 and jth col 1
+ * 
+ * @author rdixi3
+ *
+ */
+public class BooleanMatrixExample {
+
+}

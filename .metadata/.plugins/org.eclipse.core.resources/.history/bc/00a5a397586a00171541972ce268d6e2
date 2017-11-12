@@ -1,0 +1,26 @@
+package main.java.tree;
+
+public class VerticalSum {
+
+	public class HorzontalDistance {
+		int minHD;
+		int maxHD;
+	}
+
+	public static void minAndMaxHorizontolDistance(TreeNode<Integer> root, HorzontalDistance hd, int horDist) {
+		if (root == null)
+			return;
+		if (horDist < hd.minHD) {
+			hd.minHD = horDist;
+		}
+		if (horDist > hd.maxHD) {
+
+		}
+		minAndMaxHorizontolDistance(root.getLeft(), hd, horDist-1);
+		minAndMaxHorizontolDistance(root.getRight(), hd, horDist+1);
+	}
+
+	public static void verticalOrderTraversal(TreeNode<Integer> root, int lineNo) {
+
+	}
+}

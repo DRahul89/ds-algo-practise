@@ -1,0 +1,11 @@
+package main.java.tree;
+
+/**
+ * 
+ * algo is finding of node in subtree at distance K is easy for other subtree
+ * node we traverse for all ancestors and search in other subtrees
+ *
+ */
+public class AllTreeNodeDistanceK {
+
+}

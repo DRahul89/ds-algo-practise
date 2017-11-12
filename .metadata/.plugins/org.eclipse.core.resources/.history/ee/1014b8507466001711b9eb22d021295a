@@ -1,0 +1,12 @@
+package main.java.tree;
+
+/**
+ * Two trees are known as isomorphic if after some flips of left vand right they
+ * are equal
+ * 
+ * 
+ *
+ */
+public class IsomorphicTrees {
+
+}

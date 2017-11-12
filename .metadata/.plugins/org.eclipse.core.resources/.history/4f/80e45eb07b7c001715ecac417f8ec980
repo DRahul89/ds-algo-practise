@@ -1,0 +1,10 @@
+package main.java.heap;
+HeapNode{
+	int data;
+	int rowIndex;
+	int nextElementIndex;
+}
+public class MergeArrayHeap {
+
+	private HeapNode[] nodes;
+}

@@ -1,0 +1,70 @@
+package main.java.heap;
+
+class HeapNode {
+	int data;
+	int rowIndex;
+	int nextElementIndex;
+}
+
+public class MergeArrayHeap {
+
+	private HeapNode[] nodes;
+	private int count;
+	private int capacity;
+
+	public MergeArrayHeap(int capacity) {
+		this.capacity = capacity;
+		this.count = capacity - 1;
+		this.nodes = new HeapNode[capacity];
+
+	}
+	
+	public int extractMinKey() {
+		int min = this.getHeapArray()[0];
+		if(this.getCount() > 0){
+		this.getHeapArray()[0] = this.getHeapArray()[this.getCount()];
+		this.setCount(this.getCount() - 1);
+		this.minHeapify(0);
+		}
+		return min;
+	}
+
+	private int getLeft(final int index) {
+		int left = index * 2 + 1;
+		if (left > this.count)
+			return -1;
+		return left;
+	}
+
+	private int getRight(final int index) {
+		int right = index * 2 + 2;
+		if (right > this.count)
+			return -1;
+		return right;
+	}
+
+	public HeapNode[] getNodes() {
+		return nodes;
+	}
+
+	public void setNodes(HeapNode[] nodes) {
+		this.nodes = nodes;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+}

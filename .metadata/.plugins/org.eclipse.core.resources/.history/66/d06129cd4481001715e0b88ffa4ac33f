@@ -1,0 +1,24 @@
+package main.java.matrix;
+
+public class MaxSizeSubMatrixWithAllOne {
+
+	/**
+	 * craete a parallel 2d array t[][] where t[i][j] will be the size of max
+	 * submatrix with all one including input[i][j] where input[i][j] will be
+	 * rightmost bottom most entry in sub matrix
+	 * now for all element do this
+	 * if input[i][j]=1
+	 * t[i][j]=min(t[i-1][j],t[i][j-1],t[i-1][j-1])+1
+	 * else
+	 * t[i][j]=0
+	 * 
+	 * now find max of t[i][j] and indexes and print the matrix
+	 */
+	public static void maxSizeSubMatrixWithAllOne(int[][] input, int m, int n) {
+		int [][] t = new int [m][n];
+		for(int i=0;i<m;i++){
+			
+		}
+	}
+	
+}

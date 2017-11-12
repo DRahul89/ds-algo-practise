@@ -1,0 +1,32 @@
+package main.java.matrix;
+/**
+ * assumption player x start the game
+ * so if x win then no of X's +1 = no of O's
+ * so if o win then no of X's  = no of O's
+ * if no one win then no X's +1 = no of O's
+ * @author rdixi3
+ *
+ *
+ *1)  countX == countO or countX == countO + 1
+2)  If O is in win condition then check 
+     a)     If X also wins, not valid
+     b)     If xbox != obox , not valid
+3)  If X is in win condition then check if xCount is
+     one more than oCount or not  
+ */
+public class ValidityOfTicTacToe {
+	
+	int [][] winCases ={
+			
+	};
+	
+	public boolean isPlayerWin(char[] game,char player){
+		for(int i=0;i<9;i++){
+			if(game[winCases[i][0]]==player && game[winCases[i][1]]==player && game[winCases[i][2]]==player)
+				return true;
+		}
+		return false;
+	}
+
+	
+}

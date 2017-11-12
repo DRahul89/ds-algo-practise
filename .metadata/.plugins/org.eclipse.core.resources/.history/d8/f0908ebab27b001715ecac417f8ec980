@@ -1,0 +1,13 @@
+package main.java.heap;
+
+/**
+ * algo take min heap build min heap fom first k elemnt then compare rest k to
+ * n-k with root if greater remove root insert element and heapify thats way at
+ * the end there would be only k largest elkemnts
+ * 
+ * @author rdixi3
+ *
+ */
+public class KthLargestElement {
+
+}

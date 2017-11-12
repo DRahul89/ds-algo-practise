@@ -1,0 +1,29 @@
+package main.java.hashtable;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * question on pairing of array element
+ * 
+ * @author rdixi3
+ *
+ */
+public class PairOfElementQuestions {
+
+	public static boolean canPairDivisibleByK(int[] elem, int k) {
+		Map<Integer, Integer> frequency = new HashMap<>();
+		for (int i = 0; i < elem.length; i++) {
+			int rem = elem[i] % k;
+			Integer element = frequency.get(rem);
+			if (null != element) {
+				frequency.put(elem[i], element + 1);
+			} else {
+				frequency.put(elem[i], 1);
+			}
+		}
+		for (int i = 0; i < elem.length; i++) {
+
+		}
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jmsactivemq/src/main/java/Reciever.java&apos; to &apos;Receiver.java&apos;" description="Rename resource &apos;Reciever.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/Reciever.java" name="Receiver.java" stamp="1474319000056" updateReferences="true"/>
+</session>

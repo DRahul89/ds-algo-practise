@@ -1,0 +1,17 @@
+package main.java.tree;
+
+public class TreeView {
+	
+	public class Level{
+		int level=1;
+	};
+
+	/**
+	 * simple algo is to use Level oreder Traversal and print first oif all level
+	 * this is recursiive algo algo is update max level if level is same as max level this level is already visited otherwise print
+	 */
+	public static void printLeftView(TreeNode<Integer> root,Level level,){
+		
+	}
+	
+}

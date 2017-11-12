@@ -1,0 +1,17 @@
+package main.java.heap;
+
+/**
+ * algo creates a min heap from first elemnt of all arrays now extract min from
+ * heap put on output array now take the element from the same array from where
+ * min found replace with min and hepify repeat this
+ * 
+ * @author rdixi3
+ *
+ */
+public class MergeKSortedArrays {
+
+	
+	public static void mergeArrays(int[][] arrays){
+		
+	}
+}

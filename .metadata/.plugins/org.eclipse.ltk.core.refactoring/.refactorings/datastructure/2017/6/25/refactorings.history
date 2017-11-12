@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static TreeNode pushLeftMost(TreeNode current, Stack&lt;TreeNode&gt; stack)&apos; from &apos;main.java.tree.TreeTraversalWithoutRecursion.inorderTraversal()&apos; to &apos;main.java.tree.TreeTraversalWithoutRecursion&apos;&#x0D;&#x0A;- Original project: &apos;datastructure&apos;&#x0D;&#x0A;- Method name: &apos;pushLeftMost&apos;&#x0D;&#x0A;- Destination type: &apos;main.java.tree.TreeTraversalWithoutRecursion&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;pushLeftMost&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;main.java.tree{TreeTraversalWithoutRecursion.java" name="pushLeftMost" replace="false" selection="531 84" stamp="1497985299689" version="1.0" visibility="2"/>
+</session>

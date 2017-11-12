@@ -1,0 +1,11 @@
+package main.java.hashtable;
+
+/**
+ * Algo for this we count distinct of k window now we use that value for further
+ * calculation
+ *
+ *
+ */
+public class DistinctElementOfAllWindowSizeK {
+
+}

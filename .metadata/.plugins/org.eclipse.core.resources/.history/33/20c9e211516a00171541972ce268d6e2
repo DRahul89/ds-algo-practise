@@ -1,0 +1,38 @@
+package main.java.tree;
+
+/**
+ * 
+ * algo is finding of node in subtree at distance K is easy for other subtree
+ * node we traverse for all ancestors and search in other subtrees supose
+ * distance of ancestor is d from target then we search in other subtree with
+ * k-d-1 distance nodes
+ *
+ */
+public class AllTreeNodeDistanceK {
+
+	public static int printAllKDistanceNodes(TreeNode<Integer> root, int targetNode, int k) {
+		if (root == null)
+			return -1;
+		if (root.getData() == targetNode) {
+			printDownNodeWithDistanceK(root, k);
+			return 0;
+		}
+		// search target node in left subtree
+		int dl = printAllKDistanceNodes(root.getLeft(), targetNode, k);
+		// if target node found in left subtree
+		if (dl != -1) {
+			if(dl+1==k){
+				System.out.println(root.getData());
+			}else{
+				printDownNodeWithDistanceK(root.getRight(),k-dl-2);
+			}
+			//return for parent node operations
+			return dl+1;
+		}
+	}
+
+	private static void printDownNodeWithDistanceK(TreeNode<Integer> root, int k) {
+		// TODO Auto-generated method stub
+
+	}
+}

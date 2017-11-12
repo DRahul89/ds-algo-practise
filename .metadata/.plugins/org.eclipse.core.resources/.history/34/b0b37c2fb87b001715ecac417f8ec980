@@ -1,0 +1,12 @@
+package main.java.heap;
+
+/**
+ * elements are not more than k distance from there original positions algo
+ * 
+ * create a minheap from k+1 elemnts now extract min put in result array and add
+ * a new fom array and repeat
+ *
+ */
+public class SortKSortedArray {
+
+}

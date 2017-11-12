@@ -1,0 +1,19 @@
+package main.java.heap;
+class HeapNode{
+	int data;
+	int rowIndex;
+	int nextElementIndex;
+}
+public class MergeArrayHeap {
+
+	private HeapNode[] nodes;
+	private int count;
+	private int capacity;
+	
+	public MergeArrayHeap(int capacity) {
+		this.capacity =capacity;
+		this.count =capacity-1;
+		this.nodes = new HeapNode[capacity];
+				
+	}
+}

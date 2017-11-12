@@ -1,0 +1,24 @@
+package main.java.matrix;
+
+public class RowWithMaxOne {
+
+	public static int rowWithMaxOne(int[][] matrix, int m, int n) {
+		int minZero = 100;
+		int maxOneIndex = -1;
+		for (int i = 0; i < m; i++) {
+			int zeroCount = 0;
+			for (int j = 0; j < n; j++) {
+				if (matrix[i][j] == 1) {
+					break;
+				}
+				zeroCount++;
+			}
+			if (zeroCount < minZero){
+				minZero = zeroCount;
+				maxOneIndex =i;
+			}
+
+		}
+		return maxOneIndex;
+	}
+}

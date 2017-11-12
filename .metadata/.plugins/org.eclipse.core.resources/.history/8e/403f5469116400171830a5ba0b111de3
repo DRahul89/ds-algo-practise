@@ -1,0 +1,12 @@
+package main.java.tree;
+
+/**
+ * dynamic programming problem problem is you have to make a largest set of
+ * independent nodes so that no two nodes would have any edge
+ * 
+ * @author rdixi3
+ *
+ */
+public class LargestIndependentSet {
+
+}

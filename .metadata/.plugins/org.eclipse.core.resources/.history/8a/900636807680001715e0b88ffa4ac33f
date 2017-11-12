@@ -1,0 +1,10 @@
+package main.java.hashtable;
+/**
+ * algo is do the sum of all element and hash each sum
+ * now for each point sum - given sum is already seen then subraray exists
+ * @author rdixi3
+ *
+ */
+public class SubArrayWithGivenSum {
+
+}

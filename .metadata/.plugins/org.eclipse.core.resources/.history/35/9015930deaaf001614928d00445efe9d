@@ -1,0 +1,10 @@
+package forkjoin;
+
+public class Test {
+
+	
+	private void main() {
+		System.out.println("dsafa");
+
+	}
+}

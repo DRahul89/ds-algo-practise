@@ -1,0 +1,16 @@
+package main.java.tree;
+
+/**
+ * Two trees are known as isomorphic if after some flips of left vand right they
+ * are equal
+ * 
+ * algo for two nodes n1 and n2
+ * 1.data must be equal n1.data=n2.data
+ * 2.at least one of two case must true
+ * (i)left of n1 and left of n2 and right of n1 and right of n2 must be isomorphic
+ * (ii)left of n1 and right of n2 and right of n1 and left of n2 must be isomorphic
+ *
+ */
+public class IsomorphicTrees {
+
+}

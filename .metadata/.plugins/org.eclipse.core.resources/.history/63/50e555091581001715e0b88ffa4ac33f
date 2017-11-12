@@ -1,0 +1,35 @@
+package main.java.matrix;
+
+public class PrintSpiral {
+
+	public void printSpiral(final int[][] input, int rowLen, int colLen) {
+		int l = 0;
+		int m = 0;
+		while (l < rowLen && m < colLen) {
+			//print first row in remaining column
+			for(int i=m;i<colLen;i++){
+				System.out.print(input[l][i]+" ");
+			}
+			l++;
+			//print last column in remaining row
+			for(int i=l;i<rowLen;i++){
+				System.out.print(input[i][m]+" ");
+			}
+			m--;
+			
+			//print last row in remaining column
+			for(int i=colLen-1;i>=0;i--){
+				System.out.print(input[rowLen-1][i]+" ");
+			}
+			rowLen--;
+			
+			//print first column in remaining row
+			for(int i=rowLen-1;i>=0;i--){
+				System.out.print(input[rowLen-1][i]+" ");
+			}
+			rowLen--;
+			
+		}
+	}
+
+}

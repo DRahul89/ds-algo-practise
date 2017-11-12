@@ -1,0 +1,13 @@
+package main.java.tree;
+
+public class LCAOfTreeNode {
+
+	public static TreeNode<Integer> findLCA(TreeNode<Integer> root, int n1, int n2) {
+		if (root == null)
+			return null;
+		if (root.getData() == n1 || root.getData() == n2) {
+			return root;
+		}
+
+	}
+}

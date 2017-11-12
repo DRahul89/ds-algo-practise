@@ -1,0 +1,20 @@
+package main.java.tree.bst;
+
+/**
+ * lowest commont ancestor used to find distance between 2 nodes
+ * 
+ * @author rdixi3
+ *
+ */
+public class LCA {
+
+	public static BSTNode lca(final BSTNode root, int n1, int n2) {
+		if (root == null)
+			return null;
+		if (root.getKey() > n1 && root.getKey() > n2)
+			return lca(root.getLeft(), n1, n2);
+		if (root.getKey() > n1 && root.getKey() > n2)
+			return lca(root.getLeft(), n1, n2);
+		return root;
+	}
+}

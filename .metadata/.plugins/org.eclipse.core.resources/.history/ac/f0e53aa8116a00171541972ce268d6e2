@@ -1,0 +1,20 @@
+package main.java.tree;
+
+public class LCAOfTreeNode {
+
+	public static TreeNode<Integer> findLCA(TreeNode<Integer> root, int n1, int n2) {
+		if (root == null)
+			return null;
+		if (root.getData() == n1 || root.getData() == n2) {
+			return root;
+		}
+		TreeNode<Integer> leftLCA = findLCA(root.getLeft(), n1, n2);
+		TreeNode<Integer> rightLCA = findLCA(root.getLeft(), n1, n2);
+
+		if (null != leftLCA && null != rightLCA) {
+			return root;
+		}
+
+		return null != leftLCA ? leftLCA : rightLCA;
+	}
+}

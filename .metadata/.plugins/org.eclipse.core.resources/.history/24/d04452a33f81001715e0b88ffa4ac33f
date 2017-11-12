@@ -1,0 +1,17 @@
+package main.java.matrix;
+
+public class BooleanMatrix {
+
+	/**
+	 * proble is to find k such that all element of kth row are zero and kth col
+	 * 1
+	 * 
+	 * @param input
+	 * @param m
+	 * @param n
+	 * @return
+	 */
+	public static boolean kRowZeroKColOne(int[][] input, int m, int n) {
+
+	}
+}

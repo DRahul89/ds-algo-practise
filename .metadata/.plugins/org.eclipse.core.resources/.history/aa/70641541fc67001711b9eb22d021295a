@@ -1,0 +1,13 @@
+package main.java.tree;
+
+public class TreeView {
+
+	public static int maximumOddLeaf(TreeNode<Integer> root, int level) {
+
+		if (root.getLeft() == null && root.getRight() == null && level % 2 != 0) {
+			return level;
+		}
+
+		return Math.max(maximumOddLeaf(root.getLeft(), level + 1), maximumOddLeaf(root.getLeft(), level + 1));
+	}
+}

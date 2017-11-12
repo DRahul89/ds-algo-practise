@@ -1,0 +1,42 @@
+package main.java.hashtable;
+
+import java.util.HashMap;
+
+/**
+ * Algo for this we count distinct of k window now we use that value for further
+ * calculation
+ *
+ *
+ */
+public class DistinctElementOfAllWindowSizeK {
+
+	/**
+	 * calculate distinct
+	 * 
+	 * @param entry
+	 * @param k
+	 */
+	public static void distinctElementInKSizeWindow(final int[] entry, final int k) {
+		HashMap<Integer, Integer> dist = new HashMap<>();
+		int distCount = 0;
+		for (int i = 0; i < k; i++) {
+			if (null != dist.get(entry[i])) {
+				int count = dist.get(entry[i]);
+				dist.put(entry[i], count++);
+			} else {
+				distCount++;
+			}
+		}
+		System.out.println("first window dist count =" + distCount);
+		for(int i=k;i<entry.length;i++){
+			if(dist.get(entry[i-k])==1){
+				dist.remove(entry[i-k]);
+				distCount--;
+			}else{
+				int count = dist.get(entry[i]);
+				dist.put(entry[i], count--);
+				
+			}
+		}
+	}
+}

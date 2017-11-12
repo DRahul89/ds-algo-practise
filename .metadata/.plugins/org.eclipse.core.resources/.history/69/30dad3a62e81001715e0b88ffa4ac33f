@@ -1,0 +1,12 @@
+package main.java.matrix;
+
+/**
+ * algo is all vertical strip k*0 of tis matrix and then use this value to
+ * calculate trhe sum
+ * 
+ * @author rdixi3
+ *
+ */
+public class SumOfAllSubSquaresSizeK {
+
+}

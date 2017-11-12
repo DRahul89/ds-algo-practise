@@ -1,0 +1,15 @@
+package forkjoin;
+
+public class Test {
+	
+	public static void myfun(){
+		
+	}
+
+	
+	private void main() {
+		myfun();
+		System.out.println("dsafa");
+		
+	}
+}

@@ -1,0 +1,13 @@
+package main.java.matrix;
+
+public class PrintSpiral {
+
+	public void printSpiral(final int[][] input, int rowLen, int colLen) {
+		int l = 0;
+		int m = 0;
+		while (l < rowLen && m < colLen) {
+
+		}
+	}
+
+}

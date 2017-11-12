@@ -1,0 +1,10 @@
+package main.java.heap;
+
+/**
+ * elements are not more than k distance from there original positions
+ * 
+ *
+ */
+public class SortKSortedArray {
+
+}

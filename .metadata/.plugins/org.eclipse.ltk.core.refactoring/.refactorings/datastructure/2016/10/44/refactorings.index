@@ -1,0 +1,5 @@
+1477375779144	Rename method 'readLock'
+1477375959245	Rename type 'ReadWriteReentrantLock'
+1477377338725	Rename method 'isOnlyWriter'
+1477393864629	Rename type 'CasheService'
+1477397856852	Rename resource 'cyclickbarrier'

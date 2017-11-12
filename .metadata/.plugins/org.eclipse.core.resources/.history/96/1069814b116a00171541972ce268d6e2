@@ -1,0 +1,8 @@
+package main.java.tree;
+
+public class LCAOfTreeNode {
+
+	public static TreeNode<Integer> findLCA(TreeNode<Integer> root) {
+
+	}
+}

@@ -1,0 +1,22 @@
+package main.java.heap;
+
+import main.java.tree.TreeNode;
+
+/**
+ * Algo to check a binary tree is heap or not first check its complete or not
+ * then check all root is either greater or less to its child node if oth
+ * condition meets then binary tree is Heap
+ * 
+ *
+ */
+public class BinaryTreeHeap {
+
+	public static boolean isComplete(TreeNode<Integer> root,int index,int size){
+		if(root == null)
+			return true;
+		if(index > size)
+			return false;
+		
+		return isComplete(root.getLeft(), 2*index+1, size) && isComplete(root.getLeft(), 2*index+2, size);
+	}
+}

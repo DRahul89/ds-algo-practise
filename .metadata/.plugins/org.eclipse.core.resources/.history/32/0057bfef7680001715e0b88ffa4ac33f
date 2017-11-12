@@ -1,0 +1,22 @@
+package main.java.hashtable;
+
+import java.util.HashMap;
+
+/**
+ * algo is do the sum of all element and hash each sum now for each point sum -
+ * given sum is already seen then subraray exists
+ * 
+ * @author rdixi3
+ *
+ */
+public class SubArrayWithGivenSum {
+
+	public static boolean subArrayExists(int[] elem, int sum) {
+		int indexSum=0;
+		Map<Integer,Integer> indexMap=new HashMap<>();
+		for (int i = 0; i < elem.length; i++) {
+			 indexSum = indexSum + elem[i];
+			 int 
+		}
+	}
+}

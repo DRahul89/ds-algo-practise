@@ -1,0 +1,36 @@
+package main.java.tree;
+
+/**
+ * dynamic programming problem problem is you have to make a largest set of
+ * independent nodes so that no two nodes would have any edge
+ * 
+ * sol optimal substructure for any node x would be Lixss[x]=max(1+largest set
+ * of grand children,optimal subsctructure of children of x)
+ * 
+ * @author rdixi3
+ *
+ */
+public class LargestIndependentSet {
+
+	public int recursiveLargestIndependentSet(TreeNode<Integer> root) {
+		if (root == null)
+			return 0;
+
+		int childSet = recursiveLargestIndependentSet(root.getLeft()) + recursiveLargestIndependentSet(root.getRight());
+		int grandChildSet = 1;
+		if (root.getLeft() != null)
+			grandChildSet = grandChildSet +recursiveLargestIndependentSet(root.getLeft().getLeft())
+					+ recursiveLargestIndependentSet(root.getLeft().getRight());
+		if (root.getRight() != null)
+			grandChildSet = grandChildSet + recursiveLargestIndependentSet(root.getRight().getLeft())
+					+ recursiveLargestIndependentSet(root.getRight().getRight());
+
+		return Math.max(childSet, grandChildSet);
+
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
