@@ -1,0 +1,30 @@
+{
+  "name": "matalica-ui",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8765",
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "create-react-class": "^15.6.2",
+    "moment": "^2.19.3",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-bootstrap-table": "^4.2.0",
+    "react-dates": "^15.5.1",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-select": "^1.1.0",
+    "redux-notifications": "^4.0.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
